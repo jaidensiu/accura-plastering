@@ -1,18 +1,16 @@
 import Link from 'next/link'
-
 import HomeSlider from './components/HomeSlider/HomeSlider'
 import RunningStroke from './components/RunningStroke/RunningStroke'
 import HomeCollection from './components/HomeCollection/HomeCollection'
-
 import styles from './page.module.css'
 import mainStyles from './main.module.css'
 
 export const metadata = {
-    title: 'Магазин часов Rich Tales',
-    description: 'The main section of the portfolio website of Ivan Burenin',
+    title: 'Accura Plastering Ltd.', // Website tab bar name
+    description: 'Accura website main section',
 }
 
-export default function RichHome() {
+export default function AccuraHome() {
     return(
         <>
             <section className={styles.top}>
@@ -20,11 +18,15 @@ export default function RichHome() {
                     <div className={styles.topInner}>
                         <div className={styles.topLeft}>
                             <h2 className={styles.topTitle}>
-                                Совершенство в каждом тике: погрузитесь в мир драгоценных часов
+                                Title
                             </h2>
-                            <p className={mainStyles.text}>Опробуйте новую коллекцию Invicta, Rollex, Casio и многих других</p>
+                            <p className={mainStyles.text}>
+                                Text
+                            </p>
                             <Link href='/catalogue'>
-                                <button className={mainStyles.btn}>Каталог</button>
+                                <button className={mainStyles.btn}>
+                                    Button
+                                </button>
                             </Link>
                         </div>
                         <div className={styles.topRight}>
@@ -37,8 +39,12 @@ export default function RichHome() {
             <section className={styles.arrivals}>
                 <div className={mainStyles.container}>
                     <div className={styles.arrivalsInner}>
-                        <h3 className={mainStyles.title}>Новые поступления</h3>
-                        <p className={`${mainStyles.text} ${styles.arrivalsText}`}>Мы рады представить вам наши самые свежие и эксклюзивные поступления в мире дорогих часов. Наша команда усердно работает, чтобы обеспечить вам доступ к последним тенденциям и самым актуальным моделям от ведущих мировых брендов.</p>
+                        <h3 className={mainStyles.title}>
+                            Title
+                        </h3>
+                        <p className={`${mainStyles.text} ${styles.arrivalsText}`}>
+                            Text
+                        </p>
                         <HomeSlider/>
                     </div>
                 </div>
@@ -47,13 +53,15 @@ export default function RichHome() {
             <section className={styles.suppliers}>
                 <div className={mainStyles.container}>
                     <div className={styles.suppliersInner}>
-                        <h3 className={mainStyles.title}>Наши поставщики</h3>
+                        <h3 className={mainStyles.title}>
+                            Title
+                        </h3>
                         <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                            Мы гордимся тем, что сотрудничаем только с лучшими и репутационными поставщиками часов в отрасли. Наша цель - предоставить нашим клиентам только высочайшее качество и аутентичные изделия.
+                            Text
                         </p>
                         <RunningStroke/>
                         <p className={`${mainStyles.text} ${styles.suppliersBottomText}`}>
-                            Мы работаем с ведущими мировыми брендами часов, которые известны своим превосходством в техническом мастерстве и инновационных решениях. Наши поставщики имеют богатый опыт и долгую историю в часовой индустрии, что обеспечивает нам доступ к эксклюзивным коллекциям и лимитированным выпускам.
+                            Text
                         </p>
                     </div>
                 </div>
@@ -62,9 +70,11 @@ export default function RichHome() {
             <section className={styles.collections}>
                 <div className={mainStyles.container}>
                     <div className={styles.collectionsInner}>
-                        <h3 className={mainStyles.title}>Коллекции</h3>
+                        <h3 className={mainStyles.title}>
+                            Title
+                        </h3>
                         <p className={`${mainStyles.text} ${styles.collectionsText}`}>
-                            Погрузитесь в мир коллекций и найдите идеальное часовое сокровище, которое будет служить вам воплощением стиля, роскоши и престижа. Мы гарантируем вам незабываемый опыт покупки.
+                            Text
                         </p>
                         <div className={styles.collectionsContent}>
                             <HomeCollection img='./rich-tales/collections-images/collection-image1.jpg' title="Gentleman's Reserve"/>
@@ -73,7 +83,9 @@ export default function RichHome() {
                         </div>
                         <div className={styles.collectionsDown}>
                             <Link href='/catalogue'>
-                                <button className={`${mainStyles.btn} ${styles.collectionsBtn}`}>Каталог</button>
+                                <button className={`${mainStyles.btn} ${styles.collectionsBtn}`}>
+                                    Button
+                                </button>
                             </Link>
                         </div>
                     </div>
@@ -84,21 +96,27 @@ export default function RichHome() {
                 <div className={mainStyles.container}>
                     <div className={styles.aboutInner}>
                         <div className={styles.aboutLeft}>
-                            <h3 className={mainStyles.title}>О нас</h3>
+                            <h3 className={mainStyles.title}>
+                                Title
+                            </h3>
                             <div className={styles.aboutText}>
                                 <p className={mainStyles.text}>
-                                    Наша миссия - предоставить вам доступ к самым роскошным и качественным моделям часов, которые станут воплощением вашего стиля и престижа. Мы тщательно отбираем каждую модель, чтобы уверенно предлагать вам только лучшее из мира часового искусства.
+                                    Text
                                 </p>
                                 <p className={mainStyles.text}>
-                                    Мы гарантируем подлинность всех часов, представленных на нашем сайте. Мы работаем только с официальными поставщиками и дилерами, чтобы обеспечить вам высокое качество и надежность при каждой покупке.
+                                    Text
                                 </p>
                             </div>
                             <Link href='/about'>
-                                <button className={`${mainStyles.btn} ${styles.aboutBtn}`}>Подробнее</button>
+                                <button className={`${mainStyles.btn} ${styles.aboutBtn}`}>
+                                    Button
+                                </button>
                             </Link>
                         </div>
                         <div className={styles.aboutRight}>
-                            <h2 className={styles.aboutTitle}>Rich Tales</h2>       
+                            <h2 className={styles.aboutTitle}>
+                                Accura Plastering Ltd.
+                            </h2>       
                         </div>
                     </div>
                 </div>

@@ -3,9 +3,7 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-
 import Navigation from './Navigation/Navigation'
-
 import styles from './Header.module.css'
 import mainStyles from '../../main.module.css'
 
@@ -34,13 +32,15 @@ export default function Header(){
     }, []);
 
     return(
-        <header className={styles.header} style={{ backgroundColor: scrolled || pathname != '/' ? '#0B0B0B' : 'transparent'  }}>
+        <header className={styles.header} style={{ backgroundColor: scrolled || pathname != '/' ? '#0B0B0B' : 'transparent' }}>
             <div className={mainStyles.container}>
                 <nav className={styles.nav}>
                     <div className={styles.left}>
                         <Navigation/>
                     </div>
-                    <img className={`${styles.logo} ${scrolled || pathname != '/' ? styles.logoScrolled : ''}`} src="./rich-tales/home-images/logo.svg" alt="" />
+                    <span className={`${styles.logo} ${scrolled || pathname != '/' ? styles.logoScrolled : ''}`}>
+                        Accura Plastering Ltd.
+                    </span>
                     <div className={styles.right}>
                         <Link href='/favorites'>
                             <svg className={styles.headerIcon} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

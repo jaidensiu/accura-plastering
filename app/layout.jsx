@@ -1,13 +1,11 @@
 import { Providers } from './redux/provider';
-
 import Header from './components/Header/Header';
-
 import './normalize.css';
 import mainStyles from './main.module.css';
 
 export const metadata = {
-    title: 'Rich Tales',
-    description: 'The main section of the portfolio website of Ivan Burenin',
+    title: 'Accura Plastering Ltd.',
+    description: 'Accura website main section',
 }
 
 export default function RootLayout({ children }) {

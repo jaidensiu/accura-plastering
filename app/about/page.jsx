@@ -1,7 +1,5 @@
 import Link from 'next/link'
-
 import BrandsData from '../database/BrandsData'
-
 import styles from './page.module.css'
 import mainStyles from '../main.module.css'
 
@@ -15,7 +13,7 @@ export default function About() {
         <section className={styles.aboutPage}>
             <div className={mainStyles.container}>
                 <div className={styles.aboutInner}>
-                    <h3 className={mainStyles.title}>Добро пожаловать в мир RICH TALES </h3>
+                    <h3 className={mainStyles.title}>Accura Plastering Ltd.</h3>
                     <div className={styles.textContainer}>
                         <p className={mainStyles.text}>
                             Место, где роскошь и история сочетаются в каждом часовом шедевре. Мы являемся магазином, специализирующимся на продаже дорогих часов от известных мировых брендов.

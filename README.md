@@ -1,7 +1,9 @@
-<img src="./rich-tales-banner.jpg" width="100%">
-
 ## Notes
 - ```npm run dev``` to start development server
+
+# Below to be removed
+
+<img src="./rich-tales-banner.jpg" width="100%">
 
 # RICH TALES
 
