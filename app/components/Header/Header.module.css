@@ -110,7 +110,7 @@
     transition: all 1s;
     position: absolute;
     top: 0px;
-    left: 50%;
+    left: 90%;
     transform: translateX(-50%) scale(1.0);
     object-fit: contain;
 }
