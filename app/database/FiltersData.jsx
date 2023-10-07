@@ -1,13 +1,13 @@
 const FiltersData = [
     {
-        filter: 'Пол',
+        filter: 'Type',
         items: [
-            { key: 'Мужской' },
-            { key: 'Женский' }
+            { key: 'Men' },
+            { key: 'Women' }
         ]
     },
     {
-        filter: 'Бренд',
+        filter: 'Brand',
         items: [
             { key: 'Seiko' },
             { key: 'Casio' },
@@ -22,50 +22,50 @@ const FiltersData = [
         ]
     },
     {
-        filter: 'Страна',
+        filter: 'Country',
         items: [
-            { key: 'США' },
-            { key: 'Япония' },
-            { key: 'Швейцария' },
-            { key: 'Франция' }
+            { key: 'USA' },
+            { key: 'Japan' },
+            { key: 'Switzerland' },
+            { key: 'France' }
         ]
     },
     {
-        filter: 'Материал',
+        filter: 'Material',
         items: [
-            { key: 'Металл' },
-            { key: 'Золото' },
-            { key: 'Серебро' },
-            { key: 'Сталь' },
-            { key: 'Титан' }
+            { key: 'Metal' },
+            { key: 'Gold' },
+            { key: 'Silver' },
+            { key: 'Steel' },
+            { key: 'Titanium' }
         ]
     },
     {
-        filter: 'Цвет',
+        filter: 'Color',
         items: [
-            { key: 'Синий' },
-            { key: 'Розовый' },
-            { key: 'Черный' },
-            { key: 'Белый' },
-            { key: 'Зеленый' }
+            { key: 'Blue' },
+            { key: 'Pink' },
+            { key: 'Black' },
+            { key: 'White' },
+            { key: 'Green' }
         ]
     },
     {
-        filter: 'Форма',
+        filter: 'Shape',
         items: [
-            { key: 'Круглая' },
-            { key: 'Овальная' },
-            { key: 'Квадратная' },
-            { key: 'Прямоугольная' },
+            { key: 'Round' },
+            { key: 'Oval' },
+            { key: 'Square' },
+            { key: 'Rectangular' },
         ]
     },
     {
-        filter: 'Циферблат',
+        filter: 'Dial',
         items: [
-            { key: 'Механический' },
-            { key: 'Классический' },
+            { key: 'Mechanical' },
+            { key: 'Classic' },
         ]
     }
 ]
 
-export default FiltersData
+export default FiltersData;
