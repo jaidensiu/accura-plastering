@@ -4,8 +4,8 @@ import styles from './page.module.css'
 import mainStyles from '../main.module.css'
 
 export const metadata = {
-    title: 'Ваша корзина',
-    description: 'The main section of the portfolio website of Ivan Burenin',
+    title: 'Your Cart',
+    description: 'Cart page',
 }
 
 export default function Cart() {
@@ -13,7 +13,7 @@ export default function Cart() {
         <section className={styles.cartPage}>
             <div className={mainStyles.container}>
                 <div className={styles.cartInner}>
-                    <h3 className={mainStyles.title}>Корзина</h3>
+                    <h3 className={mainStyles.title}>Cart</h3>
                     <CartItems/>
                 </div>
             </div>

@@ -27,15 +27,15 @@ export default function Navigation() {
                     <path d="M1.45093 16L8.80387 8.5L16.1568 16M16.1568 1L8.80247 8.5L1.45093 1" stroke="#F3F3F3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <li className={styles.menuItem}>
-                    <Link onClick={onClickBtn} href='/catalogue'>
-                        Catalogue
-                    </Link>
-                </li>
-                <li className={styles.menuItem}>
                     <Link onClick={onClickBtn} href='/'>
                         Home
                     </Link>
                 </li>   
+                <li className={styles.menuItem}>
+                    <Link onClick={onClickBtn} href='/catalogue'>
+                        Catalogue
+                    </Link>
+                </li>
                 <li className={styles.menuItem}>
                     <Link onClick={onClickBtn} href='/contacts'>
                         Contacts

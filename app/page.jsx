@@ -6,8 +6,8 @@ import styles from './page.module.css'
 import mainStyles from './main.module.css'
 
 export const metadata = {
-    title: 'Accura Plastering Ltd.', // Website tab bar name
-    description: 'Accura website main section',
+    title: 'Accura Plastering Ltd.',
+    description: 'Home page',
 }
 
 export default function AccuraHome() {
@@ -25,7 +25,7 @@ export default function AccuraHome() {
                             </p>
                             <Link href='/catalogue'>
                                 <button className={mainStyles.btn}>
-                                    Button
+                                    Catalogue
                                 </button>
                             </Link>
                         </div>

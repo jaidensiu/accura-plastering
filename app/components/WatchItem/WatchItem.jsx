@@ -43,8 +43,8 @@ export default function WatchItem({ watch }) {
             </svg>
             <img className={styles.img} src={watch.img} alt="" />
             <h5 className={styles.title}>{watch.title}</h5>
-            <p className={styles.price}>{`цена: ${watch.price} Р`}</p>
-            <button onClick={onClickCart} className={styles.btn}>{inCart ? 'Убрать из корзины' : 'В корзину'}</button>
+            <p className={styles.price}>{`Price: ${watch.price} RUB`}</p>
+            <button onClick={onClickCart} className={styles.btn}>{inCart ? 'Remove from Cart' : 'Add to Cart'}</button>
         </div>
     )
 }

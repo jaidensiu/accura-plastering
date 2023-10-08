@@ -11,7 +11,7 @@ import styles from '../../cart/page.module.css'
 import mainStyles from '../../main.module.css'
 
 export default function CartItems() {
-    const [totalSumm, setTotalSumm] = useState(0);
+    const [totalSum, setTotalSum] = useState(0);
     const [nameInput, setNameInput] = useState('')
     const [numberInput, setNumberInput] = useState('')
     const [addressInput, setAddressInput] = useState('')
@@ -20,8 +20,8 @@ export default function CartItems() {
     const dispatch = useDispatch()
     const items = useSelector(state => state.cart.itemsInCart)
 
-    const updateTotalSumm = (price) => {
-        setTotalSumm(price)
+    const updateTotalSum = (price) => {
+        setTotalSum(price)
     }
 
     const handleName = (event) => {
@@ -39,18 +39,18 @@ export default function CartItems() {
 
     const closeModal = () => {
         setModalOpened(false)
-        setNameInput ('')
-        setNumberInput ('')
-        setAddressInput ('')
+        setNameInput('')
+        setNumberInput('')
+        setAddressInput('')
         dispatch(clearCart())
     }
 
     const onClickBtn = () => {
-        if (numberInput == '' || addressInput == '' || numberInput == '') {
-            alert('Введите данные')
-        } else (
+        if (numberInput === '' || addressInput === '' || nameInput === '') {
+            alert('Please enter data')
+        } else {
             setModalOpened(true)
-        )
+        }
     }
 
     return (
@@ -60,9 +60,9 @@ export default function CartItems() {
                 <div className={styles.modalDialog}>
                     <div className={styles.modalContent}>
                         <div className={styles.modalInner}>
-                            <h1 className={`${mainStyles.title} ${styles.modalText}`}>Магазин часов RICH TALES</h1>
-                            <h3 className={`${mainStyles.text} ${styles.modalText}`}>Заказ одобрен</h3>
-                            <button onClick={closeModal} className={mainStyles.btn}>Вернуться</button>
+                            <h1 className={`${mainStyles.title} ${styles.modalText}`}>RICH TALES Watch Store</h1>
+                            <h3 className={`${mainStyles.text} ${styles.modalText}`}>Order Approved</h3>
+                            <button onClick={closeModal} className={mainStyles.btn}>Back</button>
                         </div>
                     </div>
                 </div>
@@ -72,48 +72,48 @@ export default function CartItems() {
                 <>
                 <div className={styles.cartItems}>
                     {items.map((cart) =>
-                        <CartItem key={cart.parentId} cart={cart} updateTotalSumm={updateTotalSumm}/>
+                        <CartItem key={cart.parentId} cart={cart} updateTotalSum={updateTotalSum}/>
                     )}
                 </div>
                 <form className={styles.form}>
-                    <h3 className={`${mainStyles.title} ${styles.formTitle}`}>Контактные данные</h3>
+                    <h3 className={`${mainStyles.title} ${styles.formTitle}`}>Contact Information</h3>
                     <div className={styles.contacts}>
-                        <input type="text" className={styles.input} placeholder='Имя' value={nameInput} onChange={handleName}/>
-                        <input type="text" className={styles.input} placeholder='Телефон или почта' value={numberInput} onChange={handleNumber}/>
+                        <input type="text" className={styles.input} placeholder='Name' value={nameInput} onChange={handleName}/>
+                        <input type="text" className={styles.input} placeholder='Phone or Email' value={numberInput} onChange={handleNumber}/>
                     </div>
 
                     <div className={styles.address}>
-                        <h3 className={`${mainStyles.title} ${styles.formTitle}`}>Доставка</h3>
-                        <input type="text" className={styles.input} placeholder='Адрес доставки' value={addressInput} onChange={handleAddress}/>
-                        <textarea className={styles.textarea} placeholder='Комментарий (не обязательно)'></textarea>
+                        <h3 className={`${mainStyles.title} ${styles.formTitle}`}>Delivery</h3>
+                        <input type="text" className={styles.input} placeholder='Delivery Address' value={addressInput} onChange={handleAddress}/>
+                        <textarea className={styles.textarea} placeholder='Comment (optional)'></textarea>
                     </div>
 
-                    <h3 className={`${mainStyles.title} ${styles.formTitle}`}>Оплата</h3>
+                    <h3 className={`${mainStyles.title} ${styles.formTitle}`}>Payment</h3>
                     <div className={styles.pay}>
                         <label className={styles.label}>
                             <input name='pay' type="radio" className={styles.inputRadio}/>
                             <span className={styles.fakeRadio}></span>
-                            <p className={`${mainStyles.text} ${styles.labelText}`}>Наличными</p>
+                            <p className={`${mainStyles.text} ${styles.labelText}`}>Cash</p>
                         </label>
                         <label className={styles.label}>
                             <input name='pay' type="radio" className={styles.inputRadio} />
                             <span className={styles.fakeRadio}></span>
-                            <p className={`${mainStyles.text} ${styles.labelText}`}>Картой на сайте</p>
+                            <p className={`${mainStyles.text} ${styles.labelText}`}>Card on the Website</p>
                         </label>
                         <label className={styles.label}>
                             <input name='pay' type="radio" className={styles.inputRadio} />
                             <span className={styles.fakeRadio}></span>
-                            <p className={`${mainStyles.text} ${styles.labelText}`}>Картой при получении</p>
+                            <p className={`${mainStyles.text} ${styles.labelText}`}>Card on Delivery</p>
                         </label>
                     </div>
-                    <button onClick={onClickBtn} className={`${mainStyles.btn} ${styles.formBtn}`} type='button'>Оформить заказ</button>
+                    <button onClick={onClickBtn} className={`${mainStyles.btn} ${styles.formBtn}`} type='button'>Place an Order</button>
                 </form>
                 </>
             ) : (
                 <div className={styles.empty}>
-                    <p className={mainStyles.text}>В корзине пусто</p>
+                    <p className={mainStyles.text}>Your cart is empty</p>
                     <Link href='/catalogue'>
-                        <button className={`${mainStyles.btn} ${styles.emptyBtn}`}>Вернуться в каталог</button>
+                        <button className={`${mainStyles.btn} ${styles.emptyBtn}`}>Return to Catalog</button>
                     </Link>
                 </div>
             )}
