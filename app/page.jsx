@@ -1,7 +1,4 @@
 import Link from 'next/link'
-import HomeSlider from './components/HomeSlider/HomeSlider'
-import RunningStroke from './components/RunningStroke/RunningStroke'
-import HomeCollection from './components/HomeCollection/HomeCollection'
 import styles from './page.module.css'
 import mainStyles from './main.module.css'
 
@@ -14,38 +11,30 @@ export default function AccuraHome() {
     return(
         <>
             <section className={styles.top}>
-                <div className={`${mainStyles.container} ${styles.topContainer}`}>
-                    <div className={styles.topInner}>
-                        <div className={styles.topLeft}>
-                            <h2 className={styles.topTitle}>
-                                Title
-                            </h2>
-                            <p className={mainStyles.text}>
-                                Text
-                            </p>
-                            <Link href='/catalogue'>
-                                <button className={mainStyles.btn}>
-                                    Catalogue
-                                </button>
-                            </Link>
-                        </div>
-                        <div className={styles.topRight}>
-                            <img src="./rich-tales/home-images/top-image.png" alt="" className={styles.topImg} />
-                        </div>
-                    </div>
+                <div className={`${mainStyles.container} ${styles.topContainer}`} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <img
+                        src="./rich-tales/home-images/accura_plastering_ltd.png"
+                        alt="Accura Plastering Logo"
+                        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                    />
                 </div>
             </section>
 
-            <section className={styles.arrivals}>
+            <section className={styles.suppliers}>
                 <div className={mainStyles.container}>
-                    <div className={styles.arrivalsInner}>
+                    <div className={styles.suppliersInner}>
                         <h3 className={mainStyles.title}>
-                            Title
+                            About us
                         </h3>
-                        <p className={`${mainStyles.text} ${styles.arrivalsText}`}>
-                            Text
+                        <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
+                            Our quality workmanship and safety record speak for themselves.
                         </p>
-                        <HomeSlider/>
+                        <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
+                            We know how to plan our work projects properly, how to set them up properly. 
+                        </p>
+                        <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
+                            Performing the work with excellence becomes much easier. Quality and safety are the natural outcomes. We have written safety certifications,  suppliers certifications to install their systems and to promptly get the warranty certificates submitted without any problems . Our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. They pride themselves in the quality of their work and look forward to every new project they start. For the  Accura team, customer satisfaction is a top priority and we go "above and beyond" to earn your respect.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -54,40 +43,20 @@ export default function AccuraHome() {
                 <div className={mainStyles.container}>
                     <div className={styles.suppliersInner}>
                         <h3 className={mainStyles.title}>
-                            Title
+                            Outsulation® System Benefits
                         </h3>
                         <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                            Text
+                            Superior insulation and moisture protection
                         </p>
-                        <RunningStroke/>
-                        <p className={`${mainStyles.text} ${styles.suppliersBottomText}`}>
-                            Text
+                        <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
+                            Prevents air infiltration and keeps the weather out
                         </p>
-                    </div>
-                </div>
-            </section>
-
-            <section className={styles.collections}>
-                <div className={mainStyles.container}>
-                    <div className={styles.collectionsInner}>
-                        <h3 className={mainStyles.title}>
-                            Title
-                        </h3>
-                        <p className={`${mainStyles.text} ${styles.collectionsText}`}>
-                            Text
+                        <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
+                            Amazing variety of finishes and colours
                         </p>
-                        <div className={styles.collectionsContent}>
-                            <HomeCollection img='./rich-tales/collections-images/collection-image1.jpg' title="Gentleman's Reserve"/>
-                            <HomeCollection img='./rich-tales/collections-images/collection-image2.jpg' title="Timeless Classics"/>
-                            <HomeCollection img='./rich-tales/collections-images/collection-image3.jpg' title="Heritage Collection"/>
-                        </div>
-                        <div className={styles.collectionsDown}>
-                            <Link href='/catalogue'>
-                                <button className={`${mainStyles.btn} ${styles.collectionsBtn}`}>
-                                    Button
-                                </button>
-                            </Link>
-                        </div>
+                        <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
+                            Can be adapted to many architectural styles
+                        </p>
                     </div>
                 </div>
             </section>
@@ -96,27 +65,32 @@ export default function AccuraHome() {
                 <div className={mainStyles.container}>
                     <div className={styles.aboutInner}>
                         <div className={styles.aboutLeft}>
-                            <h3 className={mainStyles.title}>
-                                Title
-                            </h3>
+                            <h1 className={mainStyles.title}>
+                                Contact
+                            </h1>
                             <div className={styles.aboutText}>
                                 <p className={mainStyles.text}>
-                                    Text
+                                    John DeMaere
                                 </p>
                                 <p className={mainStyles.text}>
-                                    Text
+                                    Cell: (604) 818-0012
+                                </p>
+                                <p className={mainStyles.text}>
+                                    Office/Recordings: (604) 583-1409
+                                </p>
+                                <p className={mainStyles.text}>
+                                    Email: john.demaere@gmail.com
                                 </p>
                             </div>
-                            <Link href='/about'>
-                                <button className={`${mainStyles.btn} ${styles.aboutBtn}`}>
-                                    Button
-                                </button>
-                            </Link>
                         </div>
-                        <div className={styles.aboutRight}>
-                            <h2 className={styles.aboutTitle}>
-                                Accura Plastering Ltd.
-                            </h2>       
+                        <div className={styles.map}>
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.592125857392!2d-123.2459938!3d49.2606052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672cc2fd41e03%3A0xc79dd4e7732aa2f3!2sThe%20University%20of%20British%20Columbia!5e0!3m2!1sen!2sca!4v1692119753448" 
+                                width={542} 
+                                height={257} 
+                                style={{border: '0'}} 
+                                loading={'lazy'}>
+                            </iframe>
                         </div>
                     </div>
                 </div>
