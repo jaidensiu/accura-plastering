@@ -34,9 +34,9 @@ export default function Header(){
         <header className={styles.header} style={{ backgroundColor: scrolled || pathname != '/' ? '#0B0B0B' : 'transparent' }}>
             <div className={mainStyles.container}>
                 <nav className={styles.nav}>
-                    <div className={styles.left}>
+                    <span className={styles.left}>
                         <Navigation/>
-                    </div>
+                    </span>
                     <span className={`${styles.logo} ${scrolled || pathname != '/' ? styles.logoScrolled : ''}`}>
                         Accura Plastering Ltd.
                     </span>

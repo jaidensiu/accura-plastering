@@ -108,9 +108,12 @@
     justify-content: center;
 }
 
-.about{
-    margin-top: 265px;
-    padding-bottom: 200px;
+.padding50 {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
 }
 
 .aboutInner{

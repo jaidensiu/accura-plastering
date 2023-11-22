@@ -1,4 +1,4 @@
-.header{
+.header {
     position: fixed;
     padding: 20px;
     width: 100%;
@@ -10,8 +10,8 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     position: relative;
+    flex-direction: row;
 }
 
 .left {

@@ -37,7 +37,17 @@ export default function Navigation() {
                 </svg>
                 <li className={styles.menuItem}>
                     <Link onClick={onClickBtn} href='/'>
-                        Home
+                        About us
+                    </Link>
+                </li>
+                <li className={styles.menuItem}>
+                    <Link onClick={onClickBtn} href='/'>
+                        Our projects
+                    </Link>
+                </li>
+                <li className={styles.menuItem}>
+                    <Link onClick={onClickBtn} href='/'>
+                        Contact
                     </Link>
                 </li>
             </ul>

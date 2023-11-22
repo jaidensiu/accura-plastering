@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styles from './page.module.css'
 import mainStyles from './main.module.css'
 
@@ -13,14 +12,14 @@ export default function AccuraHome() {
             <section className={styles.top}>
                 <div className={`${mainStyles.container} ${styles.topContainer}`} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <img
-                        src="./rich-tales/home-images/accura_plastering_ltd.png"
+                        src="./accura-website/home-images/accura_plastering_ltd.png"
                         alt="Accura Plastering Logo"
                         style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                     />
                 </div>
             </section>
 
-            <section className={styles.suppliers}>
+            <section className={styles.padding50}>
                 <div className={mainStyles.container}>
                     <div className={styles.suppliersInner}>
                         <h3 className={mainStyles.title}>
@@ -39,29 +38,29 @@ export default function AccuraHome() {
                 </div>
             </section>
 
-            <section className={styles.suppliers}>
+            <section className={styles.padding50}>
                 <div className={mainStyles.container}>
                     <div className={styles.suppliersInner}>
                         <h3 className={mainStyles.title}>
                             Outsulation® System Benefits
                         </h3>
                         <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                            Superior insulation and moisture protection
+                            ‣ Superior insulation and moisture protection
                         </p>
                         <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                            Prevents air infiltration and keeps the weather out
+                            ‣ Prevents air infiltration and keeps the weather out
                         </p>
                         <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                            Amazing variety of finishes and colours
+                            ‣ Amazing variety of finishes and colours
                         </p>
                         <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                            Can be adapted to many architectural styles
+                            ‣ Can be adapted to many architectural styles
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section className={styles.about}>
+            <section className={styles.padding50}>
                 <div className={mainStyles.container}>
                     <div className={styles.aboutInner}>
                         <div className={styles.aboutLeft}>
@@ -70,7 +69,7 @@ export default function AccuraHome() {
                             </h1>
                             <div className={styles.aboutText}>
                                 <p className={mainStyles.text}>
-                                    John DeMaere
+                                    John deMaere
                                 </p>
                                 <p className={mainStyles.text}>
                                     Cell: (604) 818-0012
@@ -83,11 +82,11 @@ export default function AccuraHome() {
                                 </p>
                             </div>
                         </div>
-                        <div className={styles.map}>
+                        <div className={styles.padding50}>
                             <iframe 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.592125857392!2d-123.2459938!3d49.2606052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672cc2fd41e03%3A0xc79dd4e7732aa2f3!2sThe%20University%20of%20British%20Columbia!5e0!3m2!1sen!2sca!4v1692119753448" 
-                                width={542} 
-                                height={257} 
+                                width={500} 
+                                height={250} 
                                 style={{border: '0'}} 
                                 loading={'lazy'}>
                             </iframe>
