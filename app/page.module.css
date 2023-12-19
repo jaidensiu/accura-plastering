@@ -8,14 +8,14 @@
     height: 100%;
 }
 
-.topInner{
+.topInner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.topLeft{
+.topLeft {
     max-width: 660px;
     display: flex;
     flex-direction: column;
@@ -23,77 +23,77 @@
     align-items: baseline;
 }
 
-.topTitle{
+.topTitle {
     color: var(--white);
     font-family: 'Noto Serif', serif;
     font-size: 36px;
     font-weight: 600;
 }
 
-.arrivals{
+.arrivals {
     margin-top: 105px;
 }
 
-.arrivalsText{
+.arrivalsText {
     margin-top: 40px;
 }
 
-.suppliers{
+.suppliers {
     margin-top: 265px;
 }
 
-.suppliersTopText{
+.suppliersTopText {
     margin-top: 40px;
 }
 
-.movingStroke{
+.movingStroke {
     margin-top: 80px;
     border-top: 1px solid #2A2A2A;
     border-bottom: 1px solid #2A2A2A;
     overflow: hidden;
 }
 
-.movingStrokeWrap{
+.movingStrokeWrap {
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
-.brandImg{
+.brandImg {
     width: 340px;
     height: 171px;
     object-fit: contain;
 }
 
-.suppliersBottomText{
+.suppliersBottomText {
     margin-top: 80px;
 }
 
-.collections{
+.collections {
     margin-top: 265px;
 }
 
-.collectionsText{
+.collectionsText {
     margin-top: 40px;
 }
 
-.collectionsContent{
+.collectionsContent {
     margin-top: 60px;
     display: flex;
     gap: 49px;
 }
 
-.collection{
+.collection {
     position: relative;
 }
 
-.collectionImg{
+.collectionImg {
     width: 347px;
     height: 624px;
     object-fit: cover;
 }
 
-.collectionTitle{
+.collectionTitle {
     position: absolute;
     left: 25px;
     bottom: 25px;
@@ -101,7 +101,7 @@
     font-weight: 400;
 }
 
-.collectionsDown{
+.collectionsDown {
     margin-top: 70px;
     width: 100%;
     display: flex;
@@ -109,20 +109,20 @@
 }
 
 .padding50 {
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
+    padding: 50px;
 }
 
-.aboutInner{
+.topPadding50 {
+    padding-top: 50px;
+}
+
+.aboutInner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.aboutLeft{
+.aboutLeft {
     max-width: 550px;
     display: flex;
     flex-direction: column;
@@ -130,13 +130,13 @@
     align-items: baseline;
 }
 
-.aboutText{
+.aboutText {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.aboutTitle{
+.aboutTitle {
     font-family: 'Noto Serif', serif;
     font-size: 48px;
     font-weight: 500;
@@ -144,63 +144,87 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 1250px){
-    .collectionImg{
+.footer {
+    padding: 0em 0em 3.2em 0em;
+    margin-top: 3.2em;
+    text-align: center;
+}
+
+.footer__link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--clr-fg);
+}
+
+.footer__link:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 2em;
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 1250px) {
+    .collectionImg {
         width: 100%;
     }
 }
 
-@media (max-width: 1000px){
-    .aboutInner{
+@media (max-width: 1000px) {
+    .aboutInner {
         flex-direction: column;
     }
-    .aboutLeft{
+    .aboutLeft {
         max-width: 100%;
     }
-    .aboutRight{
+    .aboutRight {
         margin-top: 40px;
     }
-    .aboutTitle{
+    .aboutTitle {
         text-align: center;
     }
 }
 
-@media(max-width: 730px){
-    .topImg{
+@media(max-width: 730px) {
+    .topImg {
         display: none;
     }
-    .collectionsContent{
+    .collectionsContent {
         flex-direction: column;
     }
-    .collectionImg{
+    .collectionImg {
         height: 300px;
         display: flex;
         justify-content: center; /* Center the image horizontally */
         align-items: center; /* Center the image vertically */
     }
-    .collectionImg:nth-child(2){
+    .collectionImg:nth-child(2) {
         object-position: bottom;
     }
 }
 
-@media(max-width: 600px){
-    .topTitle{
+@media(max-width: 600px) {
+    .topTitle {
         font-size: 30px;
     }
 }
 
-@media(max-width: 400px){
-    .brandImg{
+@media(max-width: 400px) {
+    .brandImg {
         width: 200px;
         height: 100px;
     }
-    .collectionTitle{
+    .collectionTitle {
         left: 0;
     }
 }
 
-@media(max-height: 600px){
-    .top{
+@media(max-height: 600px) {
+    .top {
         padding-top: 194px;
     }
 }
