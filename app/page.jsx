@@ -29,7 +29,7 @@ export default function AccuraHome() {
                                 We know how to plan our work projects properly, how to set them up properly. 
                             </p>
                             <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                                Performing the work with excellence becomes much easier. Quality and safety are the natural outcomes. We have written safety certifications,  suppliers certifications to install their systems and to promptly get the warranty certificates submitted without any problems . Our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. They pride themselves in the quality of their work and look forward to every new project they start. For the  Accura team, customer satisfaction is a top priority and we go "above and beyond" to earn your respect.
+                                Performing the work with excellence becomes much easier. Quality and safety are the natural outcomes. We have written safety certifications,  suppliers certifications to install their systems and to promptly get the warranty certificates submitted without any problems . Our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. They pride themselves in the quality of their work and look forward to every new project they start. For the  Accura team, customer satisfaction is a top priority and we go above and beyond to earn your respect.
                             </p>
                         </div>
                     </div>
