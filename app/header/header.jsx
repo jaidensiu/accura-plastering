@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Navigation from './navigation/navigation'
-import styles from './Header.module.css'
+import styles from './header.module.css'
 import mainStyles from '../main.module.css'
 
 export default function Header(){
