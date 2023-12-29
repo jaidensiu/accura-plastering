@@ -1,6 +1,6 @@
 # Accura Plastering Website
 
-A freelance website project for Accura Plastering Ltd. built with Next.js, and deployed with Vercel.
+A freelance website project for Accura Plastering Ltd. built with Next.js, and deployed with Vercel. The website can be viewed [here](https://accuraplastering.com).
 
 ## To start development server
 -  ```npm run dev```
