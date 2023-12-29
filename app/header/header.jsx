@@ -6,7 +6,7 @@ import Navigation from './navigation/navigation'
 import styles from './header.module.css'
 import mainStyles from '../main.module.css'
 
-export default function Header(){
+export default function Header() {
     const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname()
 
@@ -35,10 +35,12 @@ export default function Header(){
             <div className={mainStyles.container}>
                 <nav className={styles.nav}>
                     <span className={styles.left}>
-                        <Navigation/>
+                        <Navigation />
                     </span>
                     <span className={`${styles.logo} ${scrolled || pathname != '/' ? styles.logoScrolled : ''}`}>
-                        Accura Plastering Ltd.
+                        <a href='https://accuraplastering.com' className={`${styles.header__link}`}>
+                            Accura Plastering Ltd.
+                        </a>
                     </span>
                 </nav>
             </div>

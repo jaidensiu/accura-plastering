@@ -41,7 +41,7 @@ export default function AccuraHome() {
                         ‣ Prevents air infiltration and keeps the weather out
                     </p>
                     <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                            ‣ Amazing variety of finishes and colours
+                        ‣ Amazing variety of finishes and colours
                     </p>
                     <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
                         ‣ Can be adapted to many architectural styles
@@ -88,7 +88,7 @@ export default function AccuraHome() {
             
             <section>
                 <footer className={styles.footer}>
-                    <a href='https:jaidensiu.github.io/' className={`${styles.link} ${styles.footer__link}`}>
+                    <a href='https://jaidensiu.github.io' className={`${styles.footer__link}`}>
                         © Developed by Jaiden Siu 2023
                     </a>
                 </footer>
