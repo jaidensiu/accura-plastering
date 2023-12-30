@@ -116,6 +116,15 @@
     padding-top: 50px;
 }
 
+.topPadding25 {
+    padding-top: 25px;
+}
+
+.verticalPadding25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .aboutInner {
     display: flex;
     justify-content: space-between;

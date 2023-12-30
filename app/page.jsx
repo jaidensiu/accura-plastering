@@ -3,7 +3,7 @@ import mainStyles from './main.module.css'
 
 export const metadata = {
     title: 'Accura Plastering Ltd.',
-    description: 'Home page',
+    description: 'Accura Plastering',
 }
 
 export default function AccuraHome() {
@@ -21,30 +21,24 @@ export default function AccuraHome() {
                         About
                     </h1>
                     <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        Our quality workmanship and safety record speak for themselves.
-                    </p>
-                    <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        We know how to plan our work projects properly, how to set them up properly. 
-                    </p>
-                    <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        Performing the work with excellence becomes much easier. Quality and safety are the natural outcomes. We have written safety certifications,  suppliers certifications to install their systems and to promptly get the warranty certificates submitted without any problems . Our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. They pride themselves in the quality of their work and look forward to every new project they start. For the  Accura team, customer satisfaction is a top priority and we go above and beyond to earn your respect.
+                        Located in Surrey, BC, our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. We have written safety certifications, suppliers certifications to install their systems and to promptly get the warranty certificates submitted without any problems. We pride ourselves in the quality of our work and look forward to every new project we start.
                     </p>
                 </div>
-                <div className={`${mainStyles.container} ${styles.topPadding50}`}>
-                    <h3>
+                <div className={`${mainStyles.container} ${styles.topPadding25}`}>
+                    <h3 className={`${styles.verticalPadding25}`}>
                         Outsulation® System Benefits
                     </h3>
-                    <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        ‣ Superior insulation and moisture protection
+                    <p className={`${mainStyles.text}`}>
+                        • Superior insulation and moisture protection
                     </p>
-                    <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        ‣ Prevents air infiltration and keeps the weather out
+                    <p className={`${mainStyles.text}`}>
+                        • Prevents air infiltration and keeps the weather out
                     </p>
-                    <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        ‣ Amazing variety of finishes and colours
+                    <p className={`${mainStyles.text}`}>
+                        • Amazing variety of finishes and colours
                     </p>
-                    <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        ‣ Can be adapted to many architectural styles
+                    <p className={`${mainStyles.text}`}>
+                        • Can be adapted to many architectural styles
                     </p>
                 </div>
             </section>
