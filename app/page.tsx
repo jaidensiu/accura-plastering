@@ -1,17 +1,35 @@
-import styles from './page.module.css'
-import mainStyles from './main.module.css'
+import React from 'react';
+import Head from 'next/head';
+import styles from './page.module.css';
+import mainStyles from './main.module.css';
 
-export const metadata = {
-    title: 'Accura Plastering Ltd.',
-    description: 'Accura Plastering',
+interface Metadata {
+    title: string;
+    description: string;
 }
 
-export default function AccuraHome() {
-    return(
+export const metadata: Metadata = {
+    title: 'Accura Plastering Ltd.',
+    description: 'Home',
+};
+
+const AccuraHome: React.FC = () => {
+    return (
         <>
+            <Head>
+                <link rel="icon" href="../public/accura-website/favicon.ico/favicon.ico" />
+            </Head>
+
             <section className={styles.top}>
-                <div className={`${mainStyles.container} ${styles.topContainer}`} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <img src="./accura-website/home-images/accura_plastering_ltd.png" alt="Accura Plastering Logo" style={{ width: '100%', height:'auto', objectFit: 'cover' }} />
+                <div 
+                    className={`${mainStyles.container} ${styles.topContainer}`}
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                    <img 
+                        src="./accura-website/home-images/accura_plastering_ltd.png"
+                        alt="Accura Plastering Logo"
+                        style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
+                    />
                 </div>
             </section>
 
@@ -49,9 +67,21 @@ export default function AccuraHome() {
                         Projects
                     </h1>
                     <div className={styles.padding50} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <img src="./accura-website/project-images/melanie_lyne.jpg" alt="Melanie Lyne" style={{ width: '30%', objectFit: 'cover' }} />
-                        <img src="./accura-website/project-images/building_side.jpg" alt="Building side" style={{ width: '30%', objectFit: 'cover' }} />
-                        <img src="./accura-website/project-images/novo_textiles.jpg" alt="Novo Textiles" style={{ width: '30%', objectFit: 'cover' }} />
+                        <img 
+                            src="./accura-website/project-images/melanie_lyne.jpg"
+                            alt="Melanie Lyne"
+                            style={{ width: '30%', objectFit: 'cover' }}
+                        />
+                        <img 
+                            src="./accura-website/project-images/building_side.jpg"
+                            alt="Building side" 
+                            style={{ width: '30%', objectFit: 'cover' }}
+                        />
+                        <img 
+                            src="./accura-website/project-images/novo_textiles.jpg"
+                            alt="Novo Textiles"
+                            style={{ width: '30%', objectFit: 'cover' }}
+                        />
                     </div>
                 </div>
             </section>
@@ -79,7 +109,7 @@ export default function AccuraHome() {
                     </div>
                 </div>
             </section>
-            
+
             <section>
                 <footer className={styles.footer}>
                     <a href='https://jaidensiu.github.io' className={`${styles.footer__link}`}>
@@ -88,5 +118,7 @@ export default function AccuraHome() {
                 </footer>
             </section>
         </>
-    )
-}
+    );
+};
+
+export default AccuraHome;

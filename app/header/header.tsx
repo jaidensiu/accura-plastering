@@ -1,14 +1,15 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { usePathname } from 'next/navigation'
-import Navigation from './navigation/navigation'
-import styles from './header.module.css'
-import mainStyles from '../main.module.css'
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Navigation from './navigation/navigation';
+import styles from './header.module.css';
+import mainStyles from '../main.module.css';
 
-export default function Header() {
+export default function Header(): JSX.Element {
     const [scrolled, setScrolled] = useState(false);
-    const pathname = usePathname()
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,20 +31,20 @@ export default function Header() {
         };
     }, []);
 
-    return(
-        <header className={styles.header} style={{ backgroundColor: scrolled || pathname != '/' ? '#0B0B0B' : 'transparent' }}>
+    return (
+        <header className={styles.header} style={{ backgroundColor: scrolled || pathname !== '/' ? '#0B0B0B' : 'transparent' }}>
             <div className={mainStyles.container}>
                 <nav className={styles.nav}>
                     <span className={styles.left}>
                         <Navigation />
                     </span>
-                    <span className={`${styles.logo} ${scrolled || pathname != '/' ? styles.logoScrolled : ''}`}>
-                        <a href='https://accuraplastering.com' className={`${styles.header__link}`}>
+                    <span className={`${styles.logo} ${scrolled || pathname !== '/' ? styles.logoScrolled : ''}`}>
+                        <Link href='/' className={`${styles.header__link}`}>
                             Accura Plastering Ltd.
-                        </a>
+                        </Link>
                     </span>
                 </nav>
             </div>
         </header>
-    )
+    );
 }
