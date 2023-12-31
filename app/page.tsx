@@ -10,16 +10,15 @@ interface Metadata {
 
 export const metadata: Metadata = {
     title: 'Accura Plastering Ltd.',
-    description: 'Home',
+    description: 'Home'
 };
 
 const AccuraHome: React.FC = () => {
     return (
         <>
             <Head>
-                <link rel="icon" href="../public/accura-website/favicon.ico/favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
-
             <section className={styles.top}>
                 <div 
                     className={`${mainStyles.container} ${styles.topContainer}`}
@@ -39,7 +38,7 @@ const AccuraHome: React.FC = () => {
                         About
                     </h1>
                     <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        Located in Surrey, BC, our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. We have written safety certifications, suppliers certifications to install their systems and to promptly get the warranty certificates submitted without any problems. We pride ourselves in the quality of our work and look forward to every new project we start.
+                        Located in Surrey, BC, our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. We have written safety certifications, and suppliers certifications to install their systems to promptly get the warranty certificates submitted without any problems. We pride ourselves in the quality of our work and look forward to every new project we start.
                     </p>
                 </div>
                 <div className={`${mainStyles.container} ${styles.topPadding25}`}>
