@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Navigation from './navigation/navigation';
+import Navigation from './navigation';
 import styles from './header.module.css';
 import mainStyles from '../main.module.css';
 

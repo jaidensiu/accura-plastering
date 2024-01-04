@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.css';
 import mainStyles from './main.module.css';
+import Carousel from './components/carousel';
 
 interface Metadata {
     title: string;
@@ -65,6 +66,19 @@ const AccuraHome: React.FC = () => {
                     <h1 className={mainStyles.title}>
                         Projects
                     </h1>
+                    {/* <div className={styles.verticalPadding25}>
+                        <Carousel
+                            images={[
+                                "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/novo_textiles.jpg",
+                            ]}
+                        />
+                    </div> */}
                     <div className={styles.padding50} style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <img 
                             src="./accura-website/project-images/melanie_lyne.jpg"
