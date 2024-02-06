@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import React, { ReactNode } from 'react';
 import Header from './components/header';
 import './normalize.css';
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
                     <main className={mainStyles.main}>{children}</main>
                 </div>
                 <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );
