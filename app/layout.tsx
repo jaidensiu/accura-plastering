@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import React, { ReactNode } from 'react';
 import Header from './components/header';
 import './normalize.css';
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
                     <Header />
                     <main className={mainStyles.main}>{children}</main>
                 </div>
+                <Analytics />
             </body>
         </html>
     );
