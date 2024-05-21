@@ -120,9 +120,21 @@
     padding-top: 25px;
 }
 
-.verticalPadding25 {
-    padding-top: 25px;
-    padding-bottom: 25px;
+.padding50 {
+    padding: 50px;
+}
+
+.sliderHorizontalPadding10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sliderImages {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    margin: auto;
+    outline: none;
 }
 
 .aboutInner {
@@ -219,6 +231,14 @@
 @media(max-width: 600px) {
     .topTitle {
         font-size: 30px;
+    }
+    .sliderImages {
+        height: 300px;
+        width: 100%;
+    }
+    .sliderHorizontalPadding10 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 

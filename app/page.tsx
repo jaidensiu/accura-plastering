@@ -39,7 +39,7 @@ const AccuraHome: React.FC = () => {
                         About
                     </h1>
                     <p className={`${mainStyles.text} ${styles.suppliersTopText}`}>
-                        Located in Surrey, BC, our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. We have written safety certifications, and suppliers certifications to install their systems to promptly get the warranty certificates submitted without any problems. We pride ourselves in the quality of our work and look forward to every new project we start.
+                        Located in Surrey, BC, our plasterers have well over 100 years of EIFS and hard coat stucco combined experience. We have written safety certifications, and suppliers certifications to install their systems to promptly get the warranty certificates submitted without any problems. With expertise in exterior cornice mouldings, we pride ourselves in the quality of our work and look forward to every new project we start.
                     </p>
                 </div>
                 <div className={`${mainStyles.container} ${styles.topPadding25}`}>
@@ -66,34 +66,13 @@ const AccuraHome: React.FC = () => {
                     <h1 className={mainStyles.title}>
                         Projects
                     </h1>
-                    {/* <div className={styles.verticalPadding25}>
+                    <div className={styles.padding50}>
                         <Carousel
                             images={[
-                                "./accura-website/project-images/novo_textiles.jpg",
-                                "./accura-website/project-images/novo_textiles.jpg",
-                                "./accura-website/project-images/novo_textiles.jpg",
-                                "./accura-website/project-images/novo_textiles.jpg",
-                                "./accura-website/project-images/novo_textiles.jpg",
-                                "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/melanie_lyne.jpg",
+                                "./accura-website/project-images/building_side.jpg",
                                 "./accura-website/project-images/novo_textiles.jpg",
                             ]}
-                        />
-                    </div> */}
-                    <div className={styles.padding50} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <img 
-                            src="./accura-website/project-images/melanie_lyne.jpg"
-                            alt="Melanie Lyne"
-                            style={{ width: '30%', objectFit: 'cover' }}
-                        />
-                        <img 
-                            src="./accura-website/project-images/building_side.jpg"
-                            alt="Building side" 
-                            style={{ width: '30%', objectFit: 'cover' }}
-                        />
-                        <img 
-                            src="./accura-website/project-images/novo_textiles.jpg"
-                            alt="Novo Textiles"
-                            style={{ width: '30%', objectFit: 'cover' }}
                         />
                     </div>
                 </div>
@@ -125,8 +104,8 @@ const AccuraHome: React.FC = () => {
 
             <section>
                 <footer className={styles.footer}>
-                    <a href='https://jaidensiu.github.io' className={`${styles.footer__link}`}>
-                        © Developed by Jaiden Siu 2023
+                    <a href='https://jaidensiu.vercel.app' className={`${styles.footer__link}`}>
+                        © Developed by Jaiden Siu 2024
                     </a>
                 </footer>
             </section>

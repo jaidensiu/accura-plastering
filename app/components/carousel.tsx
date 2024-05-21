@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Slider from 'react-slick';
+import styles from '../page.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -11,18 +12,22 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
     };
 
     return (
         <Slider {...settings}>
             {images.map((image, index) => (
-                <div key={index}>
-                    <img src={image} alt={`Project ${index + 1}`} style={{ width: '100%', objectFit: 'cover'}} />
+                <div className={styles.sliderHorizontalPadding10} key={index}>
+                    <img
+                        className={styles.sliderImages}
+                        src={image}
+                        alt={`Project ${index + 1}`}
+                    />
                 </div>
             ))}
         </Slider>
