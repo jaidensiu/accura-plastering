@@ -1,14 +1,34 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './header.module.css';
 
 export default function Navigation(): JSX.Element {
     const [openMenu, setOpenMenu] = useState(false);
+    const navRef = useRef(null);
 
     const onClickBtn = () => {
         setOpenMenu(!openMenu);
     };
+
+    const scrollToSection = (sectionId: string) => {
+        setOpenMenu(!openMenu);
+        const section = document.querySelector(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setOpenMenu(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <>
@@ -17,7 +37,7 @@ export default function Navigation(): JSX.Element {
                 <span className={styles.btnLine}></span>
                 <span className={styles.btnLine}></span>
             </button>
-            <ul className={`${styles.menu} ${openMenu ? styles.menuActive : ''}`}>
+            <ul ref={navRef} className={`${styles.menu} ${openMenu ? styles.menuActive : ''}`}>
                 <svg
                     onClick={onClickBtn}
                     className={styles.menuClose}
@@ -36,19 +56,19 @@ export default function Navigation(): JSX.Element {
                     />
                 </svg>
                 <li className={styles.menuItem}>
-                    <Link onClick={onClickBtn} href='/#about'>
+                    <a onClick={() => scrollToSection('#about')}>
                         About
-                    </Link>
+                    </a>
                 </li>
                 <li className={styles.menuItem}>
-                    <Link onClick={onClickBtn} href='/#projects'>
+                    <a onClick={() => scrollToSection('#projects')}>
                         Projects
-                    </Link>
+                    </a>
                 </li>
                 <li className={styles.menuItem}>
-                    <Link onClick={onClickBtn} href='/#contact'>
+                    <a onClick={() => scrollToSection('#contact')}>
                         Contact
-                    </Link>
+                    </a>
                 </li>
             </ul>
         </>

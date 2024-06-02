@@ -23,11 +23,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         <Slider {...settings}>
             {images.map((image, index) => (
                 <div className={styles.sliderHorizontalPadding10} key={index}>
-                    <img
-                        className={styles.sliderImages}
-                        src={image}
-                        alt={`Project ${index + 1}`}
-                    />
+                    <div className={styles.sliderNonClickable}>
+                        <img
+                            className={styles.sliderImages}
+                            src={image}
+                            alt={`Project ${index + 1}`}
+                        />
+                    </div>
                 </div>
             ))}
         </Slider>

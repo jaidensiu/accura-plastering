@@ -20,20 +20,31 @@ const AccuraHome: React.FC = () => {
             <Head>
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
-            <section className={styles.top}>
-                <div 
-                    className={`${mainStyles.container} ${styles.topContainer}`}
-                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-                >
-                    <img 
-                        src="./accura-website/home-images/accura_plastering_ltd.png"
-                        alt="Accura Plastering Logo"
-                        style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
-                    />
+            <section id="landing">
+                <div className={styles.top}>
+                    <div className={styles.videoBackground}>
+                        <video autoPlay loop muted>
+                            <source
+                                src="./accura-website/project-images/videoBgToBeAdded.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                        <div className={styles.videoOverlay}></div>
+                        <div 
+                            className={`${mainStyles.container} ${styles.topContainer}`}
+                            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                        >
+                            <img 
+                                src="./accura-website/home-images/accura_plastering_ltd.png"
+                                alt="Accura Plastering Logo"
+                                style={{ width: '100%', height: 'auto', objectFit: 'cover' }} 
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="about" className={styles.padding50}>
+            <section id="about" className={styles.sideTopPadding50}>
                 <div className={mainStyles.container}>
                     <h1 className={mainStyles.title}>
                         About
@@ -43,42 +54,48 @@ const AccuraHome: React.FC = () => {
                     </p>
                 </div>
                 <div className={`${mainStyles.container} ${styles.topPadding25}`}>
-                    <h3 className={`${styles.verticalPadding25}`}>
+                    <h3>
                         Outsulation® System Benefits
                     </h3>
-                    <p className={`${mainStyles.text}`}>
+                    <p className={`${mainStyles.text} ${styles.topPadding10}`}>
                         • Superior insulation and moisture protection
                     </p>
-                    <p className={`${mainStyles.text}`}>
+                    <p className={`${mainStyles.text} ${styles.topPadding10}`}>
                         • Prevents air infiltration and keeps the weather out
                     </p>
-                    <p className={`${mainStyles.text}`}>
+                    <p className={`${mainStyles.text} ${styles.topPadding10}`}>
                         • Amazing variety of finishes and colours
                     </p>
-                    <p className={`${mainStyles.text}`}>
+                    <p className={`${mainStyles.text} ${styles.topPadding10}`}>
                         • Can be adapted to many architectural styles
                     </p>
                 </div>
             </section>
 
-            <section id="projects" className={styles.padding50}>
+            <section id="projects" className={styles.sideTopPadding50}>
                 <div className={mainStyles.container}>
                     <h1 className={mainStyles.title}>
                         Projects
                     </h1>
-                    <div className={styles.padding50}>
+                    <div className={styles.sideTopPadding50}>
                         <Carousel
                             images={[
-                                "./accura-website/project-images/melanie_lyne.jpg",
-                                "./accura-website/project-images/building_side.jpg",
+                                "./accura-website/project-images/td_bank.jpg",
+                                "./accura-website/project-images/starbucks.jpg",
+                                "./accura-website/project-images/petro_canada.jpg",
                                 "./accura-website/project-images/novo_textiles.jpg",
+                                "./accura-website/project-images/melanie_lyne.jpg",
+                                "./accura-website/project-images/house_balcony.jpg",
+                                "./accura-website/project-images/honda.jpg",
+                                "./accura-website/project-images/highrise.jpg",
+                                "./accura-website/project-images/building_side.jpg"
                             ]}
                         />
                     </div>
                 </div>
             </section>
 
-            <section id="contact" className={styles.padding50}>
+            <section id="contact" className={styles.sideTopPadding50}>
                 <div className={mainStyles.container}>
                     <div className={styles.aboutLeft}>
                         <h1 className={mainStyles.title}>
@@ -89,13 +106,13 @@ const AccuraHome: React.FC = () => {
                                 John deMaere
                             </p>
                             <p className={mainStyles.text}>
-                                Cell: (604) 818-0012
+                                Cell: <a href="tel:+16048180012">(604) 818-0012</a>
                             </p>
                             <p className={mainStyles.text}>
-                                Office/Recordings: (604) 583-1409
+                                Office/Recordings: <a href="tel:+16045831409">(604) 583-1409</a>
                             </p>
                             <p className={mainStyles.text}>
-                                Email: john.demaere@gmail.com
+                                Email: <a href="mailto:john.demaere@gmail.com">john.demaere@gmail.com</a>
                             </p>
                         </div>
                     </div>
