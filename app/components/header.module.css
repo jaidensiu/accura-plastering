@@ -19,7 +19,6 @@
 }
 
 .logo {
-    transition: all 1s;
     flex: 1;
     text-align: center;
 }
