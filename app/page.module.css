@@ -22,16 +22,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.5);  */
-    /* TODO: comment in above after adding in video */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+}
+
+.videoFit {
+    object-fit: cover;
+    object-position: center 30%;
 }
 
 .top {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(144deg, #A4752F 0%, #786e5f 0.01%, #000 100%);
-    /* TODO: comment out above after adding in video */
+    /* background: linear-gradient(144deg, #A4752F 0%, #786e5f 0.01%, #000 100%); */
+    /* Above is linear gradient that shows when there is no background video */
 }
 
 .topContainer {

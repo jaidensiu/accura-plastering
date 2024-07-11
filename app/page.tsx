@@ -23,7 +23,7 @@ const AccuraHome: React.FC = () => {
             <section id="landing">
                 <div className={styles.top}>
                     <div className={styles.videoBackground}>
-                        <video autoPlay loop muted playsInline>
+                        <video autoPlay loop muted playsInline className={styles.videoFit}>
                             <source
                                 src="./accura-website/project-images/videoBg.mp4"
                                 type="video/mp4"
