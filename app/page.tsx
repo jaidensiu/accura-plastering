@@ -25,7 +25,7 @@ const AccuraHome: React.FC = () => {
                     <div className={styles.videoBackground}>
                         <video autoPlay loop muted>
                             <source
-                                src="./accura-website/project-images/videoBgToBeAdded.mp4"
+                                src="./accura-website/project-images/videoBg.mp4"
                                 type="video/mp4"
                             />
                         </video>
