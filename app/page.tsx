@@ -25,7 +25,7 @@ const AccuraHome: React.FC = () => {
                     <div className={styles.videoBackground}>
                         <video autoPlay loop muted playsInline className={styles.videoFit}>
                             <source
-                                src="./accura-website/project-images/videoBg.mp4"
+                                src="./accura-website/project-images/video_background.mp4"
                                 type="video/mp4"
                             />
                         </video>
@@ -80,15 +80,15 @@ const AccuraHome: React.FC = () => {
                     <div className={styles.sideTopPadding50}>
                         <Carousel
                             images={[
-                                "./accura-website/project-images/td_bank.jpg",
-                                "./accura-website/project-images/starbucks.jpg",
                                 "./accura-website/project-images/petro_canada.jpg",
+                                "./accura-website/project-images/td_bank.jpg",
                                 "./accura-website/project-images/novo_textiles.jpg",
                                 "./accura-website/project-images/melanie_lyne.jpg",
                                 "./accura-website/project-images/house_balcony.jpg",
-                                "./accura-website/project-images/honda.jpg",
-                                "./accura-website/project-images/highrise.jpg",
-                                "./accura-website/project-images/building_side.jpg"
+                                // "./accura-website/project-images/starbucks.jpg",
+                                // "./accura-website/project-images/honda.jpg",
+                                // "./accura-website/project-images/highrise.jpg",
+                                // "./accura-website/project-images/building_side.jpg"
                             ]}
                         />
                     </div>

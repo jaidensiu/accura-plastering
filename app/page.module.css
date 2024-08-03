@@ -170,7 +170,7 @@
     object-fit: cover;
     margin: auto;
     outline: none;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .sliderNonClickable {
