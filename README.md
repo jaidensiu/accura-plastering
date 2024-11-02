@@ -1,4 +1,4 @@
-# Accura Plastering Website
+# Accura Plastering Official Website
 
 A freelance website project for Accura Plastering Ltd. built with Next, and deployed with Vercel. The website can be viewed [here](https://accuraplastering.com).
 
